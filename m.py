@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-#By @CHADDI_CHOR
+#By @t_a_b_r_e_z
 
 import telebot
 import subprocess
@@ -8,10 +8,10 @@ import datetime
 import os
 
 # insert your Telegram bot token here
-bot = telebot.TeleBot('7140047362:AAE0hzLn16nhEwmBUI8og6Y9dvFsPTRVUcg')
+bot = telebot.TeleBot('7461509221:AAGpblh-YEepRUxBI4HHXcgUuRowh2sTNSE')
 
 # Admin user IDs
-admin_id = ["7023024238"]
+admin_id = ["1224183211"]
 
 # File to store allowed user IDs
 USER_FILE = "users.txt"
@@ -248,7 +248,7 @@ def handle_bgmi(message):
         else:
             response = "Usage :- /bgmi <target> <port> <time>"  # Updated command syntax
     else:
-        response = "You Are Not Authorized To Use This Command.\nBy @CHADDI_CHOR"
+        response = "You Are Not Authorized To Use This Command.\nBy @t_a_b_r_e_z"
 
     bot.reply_to(message, response)
 
@@ -285,7 +285,7 @@ def show_help(message):
 
  To See Admin Commands:
  /admincmd : Shows All Admin Commands.
- By  @CHADDI_CHOR
+ By  @t_a_b_r_e_z
 '''
     for handler in bot.message_handlers:
         if hasattr(handler, 'commands'):
@@ -300,7 +300,7 @@ def show_help(message):
 @bot.message_handler(commands=['start'])
 def welcome_start(message):
     user_name = message.from_user.first_name
-    response = f"Welcome to Your Home, {user_name}! Feel Free to Explore.\nTry To Run This Command : /help\nWelcome To The World's Best Ddos Bot\nBy @CHADDI_CHOR"
+    response = f"Welcome to Your Home, {user_name}! Feel Free to Explore.\nTry To Run This Command : /help\nWelcome To The World's Best Ddos Bot\nBy @t_a_b_r_e_z"
     bot.reply_to(message, response)
 
 
@@ -312,7 +312,7 @@ def welcome_rules(message):
 1. Dont Run Too Many Attacks !! Cause A Ban From Bot
 2. Dont Run 2 Attacks At Same Time Becz If U Then U Got Banned From Bot. 
 3. We Daily Checks The Logs So Follow these rules to avoid Ban!!
-By @CHADDI_CHOR'''
+By @t_a_b_r_e_z'''
     bot.reply_to(message, response)
 
 @bot.message_handler(commands=['plan'])
@@ -329,7 +329,7 @@ Pr-ice List:
 Day-->100 Rs
 Week-->250 Rs
 Month-->600 Rs
-By  @CHADDI_CHOR
+By  @t_a_b_r_e_z
 '''
     bot.reply_to(message, response)
 
@@ -344,7 +344,7 @@ def welcome_plan(message):
 /logs : All Users Logs.
 /broadcast : Broadcast a Message.
 /clearlogs : Clear The Logs File.
-By  @CHADDI_CHOR
+By  @t_a_b_r_e_z
 '''
     bot.reply_to(message, response)
 
@@ -375,4 +375,4 @@ def broadcast_message(message):
 
 
 bot.polling()
-#By @CHADDI_CHOR  @CHADDI_CHOR
+#By @t_a_b_r_e_z  @t_a_b_r_e_z
